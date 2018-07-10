@@ -9,6 +9,9 @@ namespace clockInCockIn
     public partial class MainForm : Form
     {
         static List<int> intList = new List<int>();
+        const int timeInterval = 60; // (seconds)
+        const int timeCount = 30; // count of timeInterval
+
 
         #region Getting mouse location 
         /// <summary>
@@ -79,7 +82,8 @@ namespace clockInCockIn
 
         private void minButton_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+            Hide();
+            notifyIcon1.Visible = true;
         }
         #endregion
 
@@ -92,13 +96,20 @@ namespace clockInCockIn
             timer.Start();
         }
 
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();
+            this.WindowState = FormWindowState.Normal;
+            notifyIcon1.Visible = false;
+        }
+
         private void Timer_Tick(object sender, EventArgs e)
         {
             currentTime++;
             ShowMousePosition();
             timeLabel.Text = DateTime.Now.ToString("HH:mm:ss");
 
-            if (currentTime % 60 == 0)
+            if (currentTime % timeInterval == 0)
             {
                 intList.Add(_x + _y);
                 for(int i = 0; i < intList.Count - 1; i++)
@@ -114,20 +125,20 @@ namespace clockInCockIn
                         intList.Clear();
                         intList.Add(currentPos);
                     }
-                    else if (intList.Count == 30)
-                    {
-                        timer.Stop();
-                        ClockInAlert alert = new ClockInAlert();
+                }
+                if (intList.Count == timeCount)
+                {
+                    timer.Stop();
+                    ClockInAlert alert = new ClockInAlert();
 
-                        if(alert.ShowDialog(null) == DialogResult.OK)
-                        {
-                            timer.Start();
-                            intList.Clear();
-                        }
-                        else
-                        {
-                            timer.Start();
-                        }
+                    if (alert.ShowDialog(null) == DialogResult.OK)
+                    {
+                        timer.Start();
+                        intList.Clear();
+                    }
+                    else
+                    {
+                        timer.Start();
                     }
                 }
             }
