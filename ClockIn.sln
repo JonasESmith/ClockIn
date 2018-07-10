@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClockIn", "ClockIn\ClockIn.csproj", "{BB14520F-B3CC-4F49-9987-B6E250B8B303}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB14520F-B3CC-4F49-9987-B6E250B8B303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB14520F-B3CC-4F49-9987-B6E250B8B303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB14520F-B3CC-4F49-9987-B6E250B8B303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB14520F-B3CC-4F49-9987-B6E250B8B303}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2582B637-8000-49AA-BF66-7A908839B8CB}
+	EndGlobalSection
+EndGlobal

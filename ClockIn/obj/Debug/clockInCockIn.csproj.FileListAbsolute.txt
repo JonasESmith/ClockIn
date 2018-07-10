@@ -1,0 +1,11 @@
+C:\Users\Jonas\Desktop\projects\clockInCockIn\clockInCockIn\bin\Debug\clockInCockIn.exe.config
+C:\Users\Jonas\Desktop\projects\clockInCockIn\clockInCockIn\bin\Debug\clockInCockIn.exe
+C:\Users\Jonas\Desktop\projects\clockInCockIn\clockInCockIn\bin\Debug\clockInCockIn.pdb
+C:\Users\Jonas\Desktop\projects\clockInCockIn\clockInCockIn\obj\Debug\clockInCockIn.csprojAssemblyReference.cache
+C:\Users\Jonas\Desktop\projects\clockInCockIn\clockInCockIn\obj\Debug\clockInCockIn.MainForm.resources
+C:\Users\Jonas\Desktop\projects\clockInCockIn\clockInCockIn\obj\Debug\clockInCockIn.Properties.Resources.resources
+C:\Users\Jonas\Desktop\projects\clockInCockIn\clockInCockIn\obj\Debug\clockInCockIn.csproj.GenerateResource.cache
+C:\Users\Jonas\Desktop\projects\clockInCockIn\clockInCockIn\obj\Debug\clockInCockIn.csproj.CoreCompileInputs.cache
+C:\Users\Jonas\Desktop\projects\clockInCockIn\clockInCockIn\obj\Debug\clockInCockIn.exe
+C:\Users\Jonas\Desktop\projects\clockInCockIn\clockInCockIn\obj\Debug\clockInCockIn.pdb
+C:\Users\Jonas\Desktop\projects\clockInCockIn\clockInCockIn\obj\Debug\clockInCockIn.ClockInAlert.resources
