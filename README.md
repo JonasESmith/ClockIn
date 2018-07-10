@@ -8,5 +8,5 @@ Application I created to remind myself to clock in after being afk for 30 minute
 
 <h1> Alert Screen </h1>
 <p align="center">
-  <img src="Alert/Main.PNG" alt="icon">
+  <img src="Images/Alert.PNG" alt="icon">
 </p>
