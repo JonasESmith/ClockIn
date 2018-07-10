@@ -116,7 +116,18 @@ namespace clockInCockIn
                     }
                     else if (intList.Count == 30)
                     {
-                        new ClockInAlert().ShowDialog();
+                        timer.Stop();
+                        ClockInAlert alert = new ClockInAlert();
+
+                        if(alert.ShowDialog(null) == DialogResult.OK)
+                        {
+                            timer.Start();
+                            intList.Clear();
+                        }
+                        else
+                        {
+                            timer.Start();
+                        }
                     }
                 }
             }

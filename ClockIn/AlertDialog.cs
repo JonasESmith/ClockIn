@@ -33,6 +33,7 @@ namespace clockInCockIn
 
         private void clockINButton_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.OK;
             this.Hide();
         }
     }
